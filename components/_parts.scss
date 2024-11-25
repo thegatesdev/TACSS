@@ -1,0 +1,166 @@
+.noselect
+{
+    user-select: none;
+}
+
+.card
+{
+    border-radius: var(--theme-round-big);
+
+    &.shadow
+    {
+        box-shadow: 5px 5px 50px #00000041;
+    }
+
+    .content
+    {
+        padding: 1.4em;
+        padding-left: 2.4em;
+        padding-right: 2.4em;
+    }
+}
+
+table
+{
+    width: 100%;
+
+    thead
+    {
+        font-weight: bold;
+    }
+
+    &.sticky thead
+    {
+        position: sticky;
+        top: 0px;
+    }
+
+    td, th
+    {
+        padding: 0.9rem;
+        text-align: left;
+    }
+
+    &.border
+    {
+        border-collapse: separate;
+
+        th,
+        td
+        {
+            border: 1px solid var(--col-bg);
+            border-left: none;
+        }
+
+        td
+        {
+            border-top: none;
+        }
+
+        tr>th:first-child,
+        tr>td:first-child
+        {
+            border-left: 1px solid var(--col-bg);
+        }
+    }
+
+    &.hover
+    {
+
+        tbody tr,
+        th
+        {
+            transition: background-color 50ms ease-out;
+
+            &:hover
+            {
+                transition: none;
+                background-color: var(--col-bg-tint);
+            }
+        }
+    }
+}
+
+.modal
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000080;
+    z-index: 1000;
+    animation: fadeIn 150ms ease;
+
+    main
+    {
+        margin: 2.4em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    >.underlay
+    {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    >.content
+    {
+        max-height: 90%;
+        width: 80%;
+        max-width: 1000px;
+
+        animation: zoomIn 150ms ease;
+    }
+
+    &.closing
+    {
+        animation: fadeOut 150ms ease;
+
+        .content
+        {
+            animation: zoomOut 150ms ease;
+        }
+    }
+}
+
+.collapse
+{
+    background-color: var(--col-bg-tint);
+
+    .content, >button
+    {
+        padding: 1rem;
+        box-sizing: border-box;
+        color: var(--col-fg);
+    }
+
+    >button
+    {
+        background-color: var(--col-bg-extra);
+        cursor: pointer;
+    }
+
+    &.hide
+    {
+        >button
+        {
+            background-color: var(--col-bg-tint);
+            &:hover
+            {
+                background-color: var(--col-bg-extra);
+            }
+        }
+
+        >.content
+        {
+            display: none;
+        }
+    }
+}
