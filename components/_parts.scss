@@ -165,21 +165,18 @@ table
     }
 }
 
-ul.list, ol.list
+.list
 {
-    &.col li a
+    &.col li > *
     {
+        display: inline-block;
         padding: 0.2rem var(--theme-size-big);
     }
 
-    &.row li a
-    {
-        padding: var(--theme-size-big) 0.2rem;
-    }
-
-    li a
+    &.row li > *
     {
         display: inline-block;
+        padding: var(--theme-size-big) 0.2rem;
     }
 
     &.hover li:hover
