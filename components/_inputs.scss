@@ -1,0 +1,31 @@
+input
+{
+    font: inherit;
+    color: inherit;
+    line-height: 120%;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]
+{
+    outline: 3px solid var(--col-bg);
+    border: none;
+    border-radius: var(--theme-round);
+    padding: 0.5rem;
+    float: left;
+
+    background-color: var(--col-bg-tint);
+    color: var(--col-fg);
+
+    &:hover
+    {
+        transition: outline-color 300ms ease-out;
+        outline: 3px solid var(--col-fg);
+    }
+
+    &:focus
+    {
+        outline: 3px solid var(--col-fg);
+    }
+}
