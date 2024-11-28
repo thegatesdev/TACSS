@@ -8,61 +8,61 @@
 {
     --col-fg: var(--theme-primary-text);
     --col-bg: var(--theme-primary);
-    --col-bg-tint: var(--theme-secondary);
+    --col-bg-tint: var(--theme-primary-tint, var(--theme-secondary));
 }
 
 .secondary
 {
     --col-fg: var(--theme-secondary-text);
     --col-bg: var(--theme-secondary);
-    --col-bg-tint: var(--theme-primary);
+    --col-bg-tint: var(--theme-secondary-tint, var(--theme-primary));
 }
 
 .active
 {
     --col-fg: var(--theme-active-text);
     --col-bg: var(--theme-active);
-    --col-bg-tint: var(--theme-inactive);
+    --col-bg-tint: var(--theme-active-tint, var(--theme-inactive));
 }
 
 .inactive
 {
     --col-fg: var(--theme-inactive-text);
     --col-bg: var(--theme-inactive);
-    --col-bg-tint: var(--theme-active);
+    --col-bg-tint: var(--theme-inactive-tint, var(--theme-active));
 }
 
 .alert
 {
     --col-fg: var(--theme-alert-text);
     --col-bg: var(--theme-alert);
-    --col-bg-tint: var(--theme-negative);
+    --col-bg-tint: var(--theme-alert-tint, var(--theme-negative));
 }
 
 .positive
 {
     --col-fg: var(--theme-positive-text);
     --col-bg: var(--theme-positive);
-    --col-bg-tint: var(--theme-secondary);
+    --col-bg-tint: var(--theme-positive-tint, var(--theme-secondary));
 }
 
 .negative
 {
     --col-fg: var(--theme-negative-text);
     --col-bg: var(--theme-negative);
-    --col-bg-tint: var(--theme-alert);
+    --col-bg-tint: var(--theme-negative-tint, var(--theme-alert));
 }
 
 .light
 {
     --col-fg: var(--theme-light-text);
     --col-bg: var(--theme-light);
-    --col-bg-tint: var(--theme-light-tint);
+    --col-bg-tint: var(--theme-light-tint, var(--theme-light));
 }
 
 .dark
 {
     --col-fg: var(--theme-dark-text);
     --col-bg: var(--theme-dark);
-    --col-bg-tint: var(--theme-dark-tint);
+    --col-bg-tint: var(--theme-dark-tint, var(--theme-dark));
 }
