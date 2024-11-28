@@ -1,7 +1,7 @@
 .btn
 {
     display: block;
-    padding: 10px;
+    padding: 5px;
     background: inherit;
     text-align: center;
 
@@ -47,6 +47,11 @@
                 background-color: inherit;
                 color: var(--col-bg);
             }
+        }
+
+        &.hover:hover
+        {
+            filter: brightness(110%);
         }
     }
 }
