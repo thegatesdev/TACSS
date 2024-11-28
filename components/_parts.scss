@@ -164,3 +164,26 @@ table
         }
     }
 }
+
+ul.list, ol.list
+{
+    &.col li a
+    {
+        padding: 0.2rem var(--theme-size-big);
+    }
+
+    &.row li a
+    {
+        padding: var(--theme-size-big) 0.2rem;
+    }
+
+    li a
+    {
+        display: inline-block;
+    }
+
+    &.hover li:hover
+    {
+        background-color: var(--col-bg-tint);
+    }
+}
