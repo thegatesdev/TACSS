@@ -12,11 +12,11 @@
         box-shadow: 5px 5px 50px #00000041;
     }
 
-    .content
+    .content, &.content
     {
-        padding: 1.4em;
-        padding-left: 2.4em;
-        padding-right: 2.4em;
+        padding: var(--theme-size);
+        padding-left: var(--theme-size-big);
+        padding-right: var(--theme-size-big);
     }
 }
 
