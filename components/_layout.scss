@@ -61,6 +61,12 @@
     height: 100%;
 }
 
+.max
+{
+    min-height: max-content;
+    min-width: max-content;
+}
+
 .pad
 {
     padding: var(--theme-size);
