@@ -29,3 +29,14 @@ input[type=number]
         outline: 3px solid var(--col-fg);
     }
 }
+
+select
+{
+    outline: 3px solid var(--col-bg);
+    border: none;
+    border-radius: 0 var(--theme-round);
+    padding: 0.5rem;
+
+    background-color: var(--col-bg-tint);
+    color: var(--col-fg);
+}
