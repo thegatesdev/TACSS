@@ -5,7 +5,10 @@
     background: inherit;
     text-align: center;
 
-    cursor: pointer;
+    &:not(:disabled)
+    {
+        cursor: pointer;
+    }
     font-weight: 600;
 
     &.wide
@@ -31,6 +34,7 @@
     {
         background-color: var(--col-bg);
         color: var(--col-fg);
+        border: 3px solid var(--col-bg);
 
         &.round
         {
@@ -39,7 +43,6 @@
 
         &.swap
         {
-            border: 3px solid var(--col-bg);
             transition: color 100ms ease-out, background-color 100ms ease-out;
 
             &:hover
